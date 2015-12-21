@@ -35,6 +35,7 @@ sudo apt-get install -y keepassx
 sudo apt-get install -y rsync grsync unison unison-gtk
 sudo apt-get install -y trash-cli
 sudo apt-get install -y git
+sudo apt-get install -y htop
 
 # Other tools.
 echo "Installing misc. tools..."
