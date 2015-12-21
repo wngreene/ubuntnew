@@ -86,3 +86,6 @@ alias e="emacs -nw"
 
 alias tp="trash-put"
 alias tl="trash-list"
+
+# Source local install folder.
+source ${HOME}/.local/env.sh
