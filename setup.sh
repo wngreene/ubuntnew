@@ -15,9 +15,11 @@ mkdir -p ${HOME}/.local/opt
 
 # Shell stuff.
 sudo apt-get install -y zsh
-chsh -s $(which zsh)
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 cp misc/zshrc ${HOME}/.zshrc
+
+# To switch default shell to zsh, execute:
+# chsh -s $(which zsh)
 
 sudo apt-get install -y terminator
 cp -r config/terminator ${HOME}/.config/terminator
