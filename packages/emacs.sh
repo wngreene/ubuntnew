@@ -21,4 +21,9 @@ sudo apt-get build-dep emacs24
 make
 make install
 
+# Checkout my emacs.d.
+cd
+rm -rf .emacs*
+git clone --recursive https://github.com/wngreene/emacs.d.git .emacs.d
+
 cd ${CW}
