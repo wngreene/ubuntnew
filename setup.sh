@@ -7,15 +7,9 @@ sudo apt-get upgrade
 # Install deja-dup.
 sudo apt-get install deja-dup
 
-# Handle some backup stuff.
-echo "Restoring post_install.sh script..."
-deja-dup --restore $HOME/misc/post_install.sh
-
 # Installing some essential tools.
 echo "Installing some essential tools..."
 sudo apt-get install emacs24
-deja-dup --restore $HOME/.emacs
-deja-dup --restore $HOME/.emacs.d
 
 sudo apt-get install gnome-disk-utility
 sudo apt-get install gparted
@@ -25,7 +19,6 @@ sudo apt-get install git gitk subversion
 sudo apt-get install keepassx
 
 sudo apt-get install rsync grsync unison unison-gtk
-deja-dup --restore $HOME/.unison
 
 # quicktile for window tiling.
 sudo apt-get install python python-gtk2 python-xlib python-dbus python-wnck
