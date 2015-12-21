@@ -19,6 +19,6 @@ sudo apt-get install build-essential
 sudo apt-get build-dep emacs24
 ./configure --prefix=${HOME}/.local
 make
-sudo make install
+make install
 
 cd ${CW}
