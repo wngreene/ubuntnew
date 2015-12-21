@@ -55,11 +55,6 @@ sudo apt-get install -y chromium-browser
 sudo apt-get install -y pepperflashplugin-nonfree # Flash for chromium.
 sudo apt-get install -y flashplugin-installer # Flash for firefox.
 sudo apt-get install -y icedtea-plugin # Java plugin.
-# Install quicktime plugin.
-# Sync chromium and firefox.
-# Import certificates.
-
-# Set static IP and namespaces (/etc/hosts).
 
 # Latex stuff.
 echo "Installing LaTeX stuff..."
@@ -101,6 +96,12 @@ sudo pip install PyOpenGL PyOpenGL_accelerate
 # Install other packages.
 ./packages/emacs.sh
 ./pacakges/quicktile.sh
+
+# TODO:
+# Sync chromium and firefox.
+# Import certificates.
+
+# Set static IP and namespaces (/etc/hosts).
 
 # Install skype.
 # Install dropbox.
