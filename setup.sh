@@ -102,6 +102,7 @@ sudo apt-get install -y libpcl-all-dev
 ./packages/emacs.sh
 ./pacakges/quicktile.sh
 ./packages/dropbox.sh
+./packages/skype.sh
 
 # TODO:
 # Sync chromium and firefox.
@@ -109,10 +110,5 @@ sudo apt-get install -y libpcl-all-dev
 
 # Set static IP and namespaces (/etc/hosts).
 
-# Install skype.
-# Install dropbox.
-
 # Install CUDA.
 # Install OpenCL.
-
-
