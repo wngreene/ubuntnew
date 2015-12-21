@@ -32,50 +32,42 @@ sudo apt-get install -y keepassx
 sudo apt-get install -y rsync grsync unison unison-gtk
 sudo apt-get install -y trash-cli
 
-# Install emacs.
-./setup_emacs.sh
+# Install other packages.
+./packages/emacs.sh
+./pacakges/quicktile.sh
 
 
 
 
-# quicktile for window tiling.
-sudo apt-get install -y python python-gtk2 python-xlib python-dbus python-wnck
-mkdir $HOME/git
-cd $HOME/git
-git clone git://github.com/ssokolow/quicktile
-cd quicktile
-sudo ./setup.py install
-cd $HOME
+
 
 # DockBarX.
 sudo add-apt-repository ppa:dockbar-main/ppa
 sudo apt-get update
-sudo apt-get install xfce4-dockbarx-plugin
+sudo apt-get install -y xfce4-dockbarx-plugin
 
 # Other tools.
 echo "Installing misc. tools..."
-sudo apt-get install build-essential
-sudo apt-get install openjdk-7-jdk 
-sudo apt-get install linux-headers-generic
-sudo apt-get install terminator
-sudo apt-get install gnome-system-monitor
-sudo apt-get install libreoffice
-sudo apt-get install vlc xubuntu-restricted-extras libavcodec-extra
-sudo apt-get install okular
-sudo apt-get install banshee
-sudo apt-get install transmision
-sudo apt-get install cmake cmake-curses-gui
-sudo apt-get install libhdf5-dev hdf5-tools hdf5-helpers h5utils
-sudo apt-get install liblz4-dev
-sudo apt-get install openssh-client openssh-server
-# Install eigen.
+sudo apt-get install -y build-essential
+sudo apt-get install -y openjdk-7-jdk 
+sudo apt-get install -y linux-headers-generic
+sudo apt-get install -y gnome-system-monitor
+sudo apt-get install -y libreoffice
+sudo apt-get install -y vlc xubuntu-restricted-extras libavcodec-extra
+sudo apt-get install -y okular
+sudo apt-get install -y banshee
+sudo apt-get install -y transmision
+sudo apt-get install -y cmake cmake-curses-gui
+sudo apt-get install -y libhdf5-dev hdf5-tools hdf5-helpers h5utils
+sudo apt-get install -y liblz4-dev
+sudo apt-get install -y openssh-client openssh-server
 
 # Install web stuff.
 echo "Installing web stuff..."
-sudo apt-get install chromium-browser
-sudo apt-get install pepperflashplugin-nonfree # Flash for chromium.
-sudo apt-get install flashplugin-installer # Flash for firefox.
-sudo apt-get install icedtea-plugin # Java plugin.
+sudo apt-get install -y chromium-browser
+sudo apt-get install -y pepperflashplugin-nonfree # Flash for chromium.
+sudo apt-get install -y flashplugin-installer # Flash for firefox.
+sudo apt-get install -y icedtea-plugin # Java plugin.
 # Install quicktime plugin.
 # Sync chromium and firefox.
 # Import certificates.
