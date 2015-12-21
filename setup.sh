@@ -9,6 +9,9 @@ sudo apt-get upgrade
 # Add environment script to HOME/.local.
 sudo cp env.sh ${HOME}/.local/env.sh
 
+# Create a local opt directory.
+mkdir ${HOME}/.local/opt
+
 # Shell stuff.
 sudo apt-get install -y zsh
 chsh -s $(which zsh)
