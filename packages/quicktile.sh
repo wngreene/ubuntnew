@@ -14,4 +14,6 @@ cd quicktile
 
 ./setup.py install --prefix=${HOME}/.local
 
+cp ../config/quicktile.cfg ${HOME}/.config/
+
 cd ${CW}
