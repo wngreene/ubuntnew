@@ -93,6 +93,11 @@ sudo apt-get install -y grive-tools
 # Install PyOpenGL.
 sudo pip install PyOpenGL PyOpenGL_accelerate
 
+# Install some research stuff.
+sudo apt-get install -y libeigen3-dev
+sudo apt-get install -y libopencv-dev
+sudo apt-get install -y libpcl-all-dev
+
 # Install other packages.
 ./packages/emacs.sh
 ./pacakges/quicktile.sh
@@ -106,12 +111,7 @@ sudo pip install PyOpenGL PyOpenGL_accelerate
 # Install skype.
 # Install dropbox.
 
-# Install eigen.
-# Install OpenCV.
-
 # Install CUDA.
-# Install PyCUDA.
 # Install OpenCL.
-# Install PyOpenCL.
 
 
