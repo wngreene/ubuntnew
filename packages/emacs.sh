@@ -15,8 +15,8 @@ cd emacs-${VERSION}
 
 tar -xvf ../emacs-${VERSION}.tar.gz
 
-sudo apt-get install build-essential
-sudo apt-get build-dep emacs24
+sudo apt-get install -y build-essential
+sudo apt-get build-dep -y emacs24
 ./configure --prefix=${HOME}/.local
 make
 make install
