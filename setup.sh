@@ -80,7 +80,7 @@ sudo pip install visvis
 # Install nvidia drivers.
 sudo add-apt-repository -y ppa:xorg-edgers/ppa
 sudo apt-get update
-sudo apt-get install nvidia-331 nvidia-settings
+sudo apt-get install nvidia-340 nvidia-settings
 
 # Install OpenGL.
 sudo apt-get install xorg-dev libglw1-mesa-dev libgl1-mesa-dev libglu1-mesa-dev mesa-common-dev mesa-utils freeglut3-dev libglew-dev
