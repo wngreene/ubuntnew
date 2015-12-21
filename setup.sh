@@ -101,6 +101,7 @@ sudo apt-get install -y libpcl-all-dev
 # Install other packages.
 ./packages/emacs.sh
 ./pacakges/quicktile.sh
+./packages/dropbox.sh
 
 # TODO:
 # Sync chromium and firefox.
