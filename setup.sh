@@ -67,6 +67,7 @@ sudo pip install virtualenv
 sudo pip install virtualenvwrapper
 sudo apt-get install -y python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
 sudo pip install visvis
+sudo pip install pylint cpplint
 # mayavi?
 
 # DockBarX.
