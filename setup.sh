@@ -78,6 +78,11 @@ sudo add-apt-repository ppa:dockbar-main/ppa
 sudo apt-get update
 sudo apt-get install -y xfce4-dockbarx-plugin
 
+# Load monitor.
+sudo add-apt-repository ppa:indicator-multiload/stable-daily
+sudo apt-get update
+sudo apt-get install indicator-multiload
+
 # Install nvidia drivers.
 sudo add-apt-repository -y ppa:xorg-edgers/ppa
 sudo apt-get update
