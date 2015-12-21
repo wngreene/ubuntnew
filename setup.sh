@@ -8,6 +8,7 @@ sudo apt-get upgrade
 
 # Add environment script to HOME/.local.
 sudo cp env.sh ${HOME}/.local/env.sh
+source ${HOME}/.local/env.sh
 
 # Create a local opt directory.
 mkdir ${HOME}/.local/opt
@@ -31,20 +32,6 @@ sudo apt-get install -y git gitk subversion
 sudo apt-get install -y keepassx
 sudo apt-get install -y rsync grsync unison unison-gtk
 sudo apt-get install -y trash-cli
-
-# Install other packages.
-./packages/emacs.sh
-./pacakges/quicktile.sh
-
-
-
-
-
-
-# DockBarX.
-sudo add-apt-repository ppa:dockbar-main/ppa
-sudo apt-get update
-sudo apt-get install -y xfce4-dockbarx-plugin
 
 # Other tools.
 echo "Installing misc. tools..."
@@ -76,72 +63,54 @@ sudo apt-get install -y icedtea-plugin # Java plugin.
 
 # Latex stuff.
 echo "Installing LaTeX stuff..."
-sudo apt-get install texlive
+sudo apt-get install -y texlive
 
 # Python stuff.
 echo "Installing Python stuff..."
-sudo apt-get install python-pip
+sudo apt-get install -y python-pip
 sudo pip install virtualenv
 sudo pip install virtualenvwrapper
-sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
+sudo apt-get install -y python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
 sudo pip install visvis
 # mayavi?
+
+# DockBarX.
+sudo add-apt-repository ppa:dockbar-main/ppa
+sudo apt-get update
+sudo apt-get install -y xfce4-dockbarx-plugin
 
 # Install nvidia drivers.
 sudo add-apt-repository -y ppa:xorg-edgers/ppa
 sudo apt-get update
-sudo apt-get install nvidia-340 nvidia-settings
+sudo apt-get install -y nvidia-340 nvidia-settings
 
 # Install OpenGL.
-sudo apt-get install xorg-dev libglw1-mesa-dev libgl1-mesa-dev libglu1-mesa-dev mesa-common-dev mesa-utils freeglut3-dev libglew-dev
+sudo apt-get install -y xorg-dev libglw1-mesa-dev libgl1-mesa-dev libglu1-mesa-dev mesa-common-dev mesa-utils freeglut3-dev libglew-dev
 
 # Install boost.
-sudo apt-get install libboost-all-dev 
-
-# Install skype.
-# Install dropbox.
+sudo apt-get install -y libboost-all-dev 
 
 # Install grive.
 sudo add-apt-repository ppa:thefanclub/grive-tools
 sudo apt-get update
-sudo apt-get install grive-tools
+sudo apt-get install -y grive-tools
 
 # Install PyOpenGL.
 sudo pip install PyOpenGL PyOpenGL_accelerate
 
-# Install GLFW.
-cd $HOME/git
-git clone https://github.com/glfw/glfw.git
-cd glfw
-mkdir build
-cd build
-cmake ..
-#cmake -DBUILD_SHARED_LIBS=ON ..
-sudo make install
-cd ~
+# Install other packages.
+./packages/emacs.sh
+./pacakges/quicktile.sh
 
-# Install PyGLFW.
-cd $HOME/git
-git clone https://github.com/rougier/pyglfw.git
+# Install skype.
+# Install dropbox.
 
-# Create install script.
-cd pyglfw
-echo "
-from distutils.core import setup 
-setup(name='glfw', 
-      version='3.0.1', 
-      py_modules=['glfw'],
-      )
-" > setup.py
-python setup.py sdist
-cd dist
-tar -xzf glfw-3.0.1.tar.gz
-cd glfw-3.0.1/
-sudo python setup.py install
+# Install eigen.
+# Install OpenCV.
 
 # Install CUDA.
 # Install PyCUDA.
 # Install OpenCL.
 # Install PyOpenCL.
 
-# Install OpenCV.
+
