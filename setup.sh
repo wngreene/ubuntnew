@@ -96,20 +96,6 @@ sudo add-apt-repository ppa:thefanclub/grive-tools
 sudo apt-get update
 sudo apt-get install grive-tools
 
-## Install SyncDrive.
-#sudo add-apt-repository ppa:noobslab/pear-apps
-#sudo apt-get update
-#sudo apt-get install syncdrive
-
-# Install eclipse.
-#     import preferences
-#     cdt
-#     git (EGit)
-#     subversion (Subversive)
-#     cmake-plugin (CMake Editor)
-#     PyDev
-#     color themes
-
 # Install PyOpenGL.
 sudo pip install PyOpenGL PyOpenGL_accelerate
 
@@ -149,8 +135,3 @@ sudo python setup.py install
 # Install PyOpenCL.
 
 # Install OpenCV.
-
-# Checkout Quad.
-svn --username wng co https://svn.csail.mit.edu/Quad Quad
-
-# Setup backup.
