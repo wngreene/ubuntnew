@@ -1,27 +1,42 @@
 #!/bin/bash
 
+# Setup a new Ubuntu machine. Needs to be run from the checkout directory.
+
 # Update the system.
 sudo apt-get update
 sudo apt-get upgrade
 
-# Install deja-dup.
-sudo apt-get install deja-dup
+# Add environment script to HOME/.local.
+sudo cp env.sh ${HOME}/.local/env.sh
+
+# Shell stuff.
+sudo apt-get install -y zsh
+chsh -s $(which zsh)
+sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+cp zshrc ${HOME}/.zshrc
+
+sudo apt-get install -y terminator
+cp -r config/terminator ${HOME}/.config/terminator
 
 # Installing some essential tools.
 echo "Installing some essential tools..."
-sudo apt-get install emacs24
+sudo apt-get install -y deja-dup
+sudo apt-get install -y gnome-disk-utility
+sudo apt-get install -y gparted
+sudo apt-get install -y usb-creator-gtk
+sudo apt-get install -y git gitk subversion
+sudo apt-get install -y keepassx
+sudo apt-get install -y rsync grsync unison unison-gtk
+sudo apt-get install -y trash-cli
 
-sudo apt-get install gnome-disk-utility
-sudo apt-get install gparted
-sudo apt-get install usb-creator-gtk
-sudo apt-get install nautilus # Make sure this is the default.
-sudo apt-get install git gitk subversion
-sudo apt-get install keepassx
+# Install emacs.
+./setup_emacs.sh
 
-sudo apt-get install rsync grsync unison unison-gtk
+
+
 
 # quicktile for window tiling.
-sudo apt-get install python python-gtk2 python-xlib python-dbus python-wnck
+sudo apt-get install -y python python-gtk2 python-xlib python-dbus python-wnck
 mkdir $HOME/git
 cd $HOME/git
 git clone git://github.com/ssokolow/quicktile
