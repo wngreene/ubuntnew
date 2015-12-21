@@ -1,8 +1,11 @@
 #!/bin/bash
 
+# Install emacs.
+
+CW=PWD
+
 VERSION=24.4
 
-# Install emacs.
 mkdir ${HOME}/.local/opt
 cd ${HOME}/.local/opt
 
@@ -17,3 +20,5 @@ sudo apt-get build-dep emacs24
 ./configure --prefix=${HOME}/.local
 make
 sudo make install
+
+cd ${CW}
