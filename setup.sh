@@ -7,7 +7,7 @@ sudo apt-get update
 sudo apt-get upgrade
 
 # Add environment script to HOME/.local.
-sudo cp env.sh ${HOME}/.local/env.sh
+sudo cp misc/env.sh ${HOME}/.local/env.sh
 source ${HOME}/.local/env.sh
 
 # Create a local opt directory.
@@ -17,7 +17,7 @@ mkdir ${HOME}/.local/opt
 sudo apt-get install -y zsh
 chsh -s $(which zsh)
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-cp zshrc ${HOME}/.zshrc
+cp misc/zshrc ${HOME}/.zshrc
 
 sudo apt-get install -y terminator
 cp -r config/terminator ${HOME}/.config/terminator
