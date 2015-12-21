@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install GLFW.
-CW=PWD
+CW=${PWD}
 
 mkdir -p ${HOME}/.local/opt
 cd ${HOME}/.local/opt

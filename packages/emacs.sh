@@ -2,7 +2,7 @@
 
 # Install emacs.
 
-CW=PWD
+CW=${PWD}
 
 VERSION=24.4
 

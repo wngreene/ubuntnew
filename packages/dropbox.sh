@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install dropbox.
-CW=PWD
+CW=${PWD}
 
 # # Add dropbox repository key.
 # sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E

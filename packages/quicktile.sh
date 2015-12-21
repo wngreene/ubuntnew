@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install quicktile.
-CW=PWD
+CW=${PWD}
 
 # Install some dependencies.
 sudo apt-get install -y python python-gtk2 python-xlib python-dbus python-wnck
