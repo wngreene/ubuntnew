@@ -14,7 +14,7 @@ CW=PWD
 sudo apt-get install nautilus-dropbox thunar-dropbox-plugin
 
 # Make MIT dropbox.
-mkdir ${HOME}/.dropbox-mit
+mkdir -p ${HOME}/.dropbox-mit
 HOME=${HOME}/.dropbox-mit
 dropbox start -i
 

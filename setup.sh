@@ -11,7 +11,7 @@ sudo cp misc/env.sh ${HOME}/.local/env.sh
 source ${HOME}/.local/env.sh
 
 # Create a local opt directory.
-mkdir ${HOME}/.local/opt
+mkdir -p ${HOME}/.local/opt
 
 # Shell stuff.
 sudo apt-get install -y zsh
@@ -32,6 +32,7 @@ sudo apt-get install -y git gitk subversion
 sudo apt-get install -y keepassx
 sudo apt-get install -y rsync grsync unison unison-gtk
 sudo apt-get install -y trash-cli
+sudo apt-get install -y git
 
 # Other tools.
 echo "Installing misc. tools..."

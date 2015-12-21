@@ -3,7 +3,7 @@
 # Install PyGLFW.
 CW=PWD
 
-mkdir ${HOME}/.local/opt
+mkdir -p ${HOME}/.local/opt
 cd ${HOME}/.local/opt
 
 git clone https://github.com/rougier/pyglfw.git

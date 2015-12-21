@@ -6,11 +6,11 @@ CW=PWD
 
 VERSION=24.4
 
-mkdir ${HOME}/.local/opt
+mkdir -p ${HOME}/.local/opt
 cd ${HOME}/.local/opt
 
 wget http://mirror.team-cymru.org/gnu/emacs/emacs-${VERSION}.tar.gz
-mkdir emacs-${VERSION}
+mkdir -p emacs-${VERSION}
 cd emacs-${VERSION}
 
 tar -xvf ../emacs-${VERSION}.tar.gz
