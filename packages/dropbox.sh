@@ -18,4 +18,7 @@ mkdir -p ${HOME}/.dropbox-mit
 HOME=${HOME}/.dropbox-mit
 dropbox start -i
 
+# Copy start scripts to .local/bin.
+cp ../scripts/start* ${HOME}/.local/bin
+
 cd ${CW}
