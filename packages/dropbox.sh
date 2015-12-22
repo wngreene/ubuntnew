@@ -3,6 +3,9 @@
 # Install dropbox.
 CW=${PWD}
 
+sudo add-apt-repository ppa:xubuntu-dev/extras
+sudo apt-get update
+
 # # Add dropbox repository key.
 # sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
 
