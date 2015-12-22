@@ -52,6 +52,7 @@ sudo apt-get install -y cmake cmake-curses-gui
 sudo apt-get install -y libhdf5-dev hdf5-tools hdf5-helpers h5utils
 sudo apt-get install -y liblz4-dev
 sudo apt-get install -y openssh-client openssh-server
+sudo apt-get install -y synergy
 
 # Install web stuff.
 echo "Installing web stuff..."
