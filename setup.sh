@@ -26,13 +26,13 @@ cp -r config/terminator ${HOME}/.config/terminator
 
 # Installing some essential tools.
 echo "Installing some essential tools..."
-sudo apt-get install -y deja-dup
+# sudo apt-get install -y deja-dup
 sudo apt-get install -y gnome-disk-utility
 sudo apt-get install -y gparted
 sudo apt-get install -y usb-creator-gtk
 sudo apt-get install -y git gitk subversion
 sudo apt-get install -y keepassx
-sudo apt-get install -y rsync grsync unison unison-gtk
+sudo apt-get install -y rsync grsync #unison unison-gtk
 sudo apt-get install -y trash-cli
 sudo apt-get install -y git
 sudo apt-get install -y htop
@@ -45,8 +45,8 @@ sudo apt-get install -y linux-headers-generic
 sudo apt-get install -y gnome-system-monitor
 sudo apt-get install -y libreoffice
 sudo apt-get install -y vlc xubuntu-restricted-extras libavcodec-extra
-sudo apt-get install -y okular
-sudo apt-get install -y banshee
+# sudo apt-get install -y okular
+# sudo apt-get install -y banshee
 sudo apt-get install -y transmision
 sudo apt-get install -y cmake cmake-curses-gui
 sudo apt-get install -y libhdf5-dev hdf5-tools hdf5-helpers h5utils
@@ -88,7 +88,7 @@ sudo apt-get install indicator-multiload
 # Install nvidia drivers.
 sudo add-apt-repository -y ppa:xorg-edgers/ppa
 sudo apt-get update
-sudo apt-get install -y nvidia-340 nvidia-settings
+sudo apt-get install -y nvidia-375 nvidia-settings
 
 # Install OpenGL.
 sudo apt-get install -y xorg-dev libglw1-mesa-dev libgl1-mesa-dev libglu1-mesa-dev mesa-common-dev mesa-utils freeglut3-dev libglew-dev
@@ -97,20 +97,20 @@ sudo apt-get install -y xorg-dev libglw1-mesa-dev libgl1-mesa-dev libglu1-mesa-d
 sudo apt-get install -y libboost-all-dev 
 
 # Install grive.
-sudo add-apt-repository ppa:thefanclub/grive-tools
-sudo apt-get update
-sudo apt-get install -y grive-tools
+# sudo add-apt-repository ppa:thefanclub/grive-tools
+# sudo apt-get update
+# sudo apt-get install -y grive-tools
 
 # Install PyOpenGL.
-sudo pip install PyOpenGL PyOpenGL_accelerate
+# sudo pip install PyOpenGL PyOpenGL_accelerate
 
 # Install some research stuff.
-sudo apt-get install -y libeigen3-dev
-sudo apt-get install -y libopencv-dev
+# sudo apt-get install -y libeigen3-dev
+# sudo apt-get install -y libopencv-dev
 
-sudo add-apt-repository ppa:v-launchpad-jochen-sprickerhof-de/pcl
-sudo apt-get update
-sudo apt-get install -y libpcl-all-dev
+# sudo add-apt-repository ppa:v-launchpad-jochen-sprickerhof-de/pcl
+# sudo apt-get update
+# sudo apt-get install -y libpcl-all-dev
 
 # Install other packages.
 ./packages/emacs.sh
