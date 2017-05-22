@@ -1,24 +1,26 @@
 #!/bin/bash
 
-# Install emacs.
-
 CW=${PWD}
 
-VERSION=24.4
+# Install emacs from source.
+# VERSION=24.4
 
-mkdir -p ${HOME}/.local/opt
-cd ${HOME}/.local/opt
+# mkdir -p ${HOME}/.local/opt
+# cd ${HOME}/.local/opt
 
-wget http://mirror.team-cymru.org/gnu/emacs/emacs-${VERSION}.tar.gz
+# wget http://mirror.team-cymru.org/gnu/emacs/emacs-${VERSION}.tar.gz
 
-tar -xvf emacs-${VERSION}.tar.gz
-cd emacs-${VERSION}
+# tar -xvf emacs-${VERSION}.tar.gz
+# cd emacs-${VERSION}
 
-sudo apt-get install -y build-essential
-sudo apt-get build-dep -y emacs24
-./configure --prefix=${HOME}/.local
-make
-make install
+# sudo apt-get install -y build-essential
+# sudo apt-get build-dep -y emacs24
+# ./configure --prefix=${HOME}/.local
+# make
+# make install
+
+# Install emacs from apt.
+sudo apt-get install -y emacs
 
 # Checkout my emacs.d.
 cd
