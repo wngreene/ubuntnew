@@ -1,11 +1,11 @@
 [global_config]
   title_transmit_bg_color = "#7fb3c2"
 [keybindings]
-  go_up = <Alt><Super>i
-  go_down = <Alt><Super>k
+  go_up = <Primary><Alt>i
+  go_down = <Primary><Alt>k
   close_term = <Primary><Shift>w
-  go_right = <Alt><Super>l
-  go_left = <Alt><Super>j
+  go_right = <Primary><Alt>l
+  go_left = <Primary><Alt>j
   hide_window = <Primary><Shift><Alt>h
 [profiles]
   [[default]]
@@ -16,6 +16,7 @@
     cursor_color = "#8ae234"
     icon_bell = False
     font = Ubuntu Mono 10
+    scrollback_infinite = True
 [layouts]
   [[default]]
     [[[child1]]]
