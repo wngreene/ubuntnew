@@ -36,6 +36,7 @@ sudo apt-get install -y rsync grsync #unison unison-gtk
 sudo apt-get install -y trash-cli
 sudo apt-get install -y git
 sudo apt-get install -y htop
+sudo apt-get install -y silversearcher-ag
 
 # Other tools.
 echo "Installing misc. tools..."
