@@ -2,4 +2,4 @@
 
 # Start the dropbox daemon.
 #/home/$USER/.dropbox-dist/dropboxd
-/usr/bin/dropbox start -i
+dbus-launch /usr/bin/dropbox start -i
