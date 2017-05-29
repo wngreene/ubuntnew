@@ -13,6 +13,11 @@ source ${HOME}/.local/env.sh
 # Create a local opt directory.
 mkdir -p ${HOME}/.local/opt
 
+# Setup i3wm.
+sudo apt-get install -y i3 feh arandr
+mkdir -p ${HOME}/.i3
+cp misc/i3config ${HOME}/.config/i3/config
+
 # Shell stuff.
 sudo apt-get install -y zsh
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
