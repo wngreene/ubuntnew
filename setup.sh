@@ -124,6 +124,7 @@ sudo apt-get install -y libboost-all-dev
 ./packages/dropbox.sh
 ./packages/skype.sh
 # ./packages/quicktile.sh
+./package/arc_theme.sh
 
 # TODO:
 # Sync chromium and firefox.
