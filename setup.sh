@@ -14,7 +14,7 @@ source ${HOME}/.local/env.sh
 mkdir -p ${HOME}/.local/opt
 
 # Setup i3wm.
-sudo apt-get install -y i3 i3blocks feh arandr lxappearance
+sudo apt-get install -y i3 i3blocks feh xautolock lxappearance
 cp misc/i3config ${HOME}/.config/i3/config
 cp misc/i3blocks.conf ${HOME}/.config/i3/i3blocks.conf
 cp scripts/i3blocksmemory.sh ${HOME}/.local/bin/

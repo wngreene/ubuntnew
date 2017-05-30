@@ -30,7 +30,7 @@ font pango:Deja Vu Sans Mono Book 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+t exec xfce4-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -210,4 +210,9 @@ exec_always --no-startup-id /home/wng/.local/bin/start_dropbox_daemon.sh
 exec_always --no-startup-id /home/wng/.local/bin/start_dropbox_mit_daemon.sh
 
 # Wallpaper.
-exec_always feh --bg-scale /home/wng/Pictures/wallpaper.jpg
+set $wallpaper /home/wng/Pictures/wallpaper.png
+exec_always feh --bg-scale $wallpaper
+
+# Lock screen.
+bindsym $mod+Return exec i3lock -d -c 000000
+exec --no-startup-id xautolock -time 15 -locker 'i3lock -d -c 000000'
