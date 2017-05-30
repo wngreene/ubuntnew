@@ -206,9 +206,9 @@ bindsym $alt+Tab workspace next
 bindsym $alt+Shift+Tab workspace prev
 
 # Audio controls.
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 1 toggle # mute sound
+bindsym XF86AudioRaiseVolume exec --no-startup-id /home/wng/.local/bin/volume_up.sh
+bindsym XF86AudioLowerVolume exec --no-startup-id /home/wng/.local/bin/volume_down.sh
+bindsym XF86AudioMute exec --no-startup-id /home/wng/.local/bin/volume_mute.sh
 
 # Dropbox.
 exec_always --no-startup-id /home/wng/.local/bin/start_dropbox_daemon.sh
