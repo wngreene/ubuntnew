@@ -7,7 +7,7 @@ sudo apt-get update
 sudo apt-get upgrade
 
 # Add environment script to HOME/.local.
-sudo cp misc/env.sh ${HOME}/.local/env.sh
+sudo cp scripts/env.sh ${HOME}/.local/env.sh
 source ${HOME}/.local/env.sh
 
 # Create a local opt directory.
@@ -15,14 +15,13 @@ mkdir -p ${HOME}/.local/opt
 
 # Setup i3wm.
 sudo apt-get install -y i3 i3blocks feh xautolock lxappearance
-cp misc/i3config ${HOME}/.config/i3/config
-cp misc/i3blocks.conf ${HOME}/.config/i3/i3blocks.conf
+cp -r .config/i3/config ${HOME}/.config/i3/config
 cp scripts/i3blocksmemory.sh ${HOME}/.local/bin/
 
 # Shell stuff.
 sudo apt-get install -y zsh
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-cp misc/zshrc ${HOME}/.zshrc
+cp .zshrc ${HOME}/.zshrc
 
 # To switch default shell to zsh, execute:
 # chsh -s $(which zsh)
@@ -32,7 +31,7 @@ cp misc/zshrc ${HOME}/.zshrc
 
 # After installing, set theme in xfce4-terminal.
 mkdir -p ${HOME}/.local/share/xfce4/terminal/colorschemes
-cp misc/monokai-dark.theme ${HOME}/.local/share/xfce4/terminal/colorschemes/
+cp .config/monokai-dark.theme ${HOME}/.local/share/xfce4/terminal/colorschemes/
 
 # Installing some essential tools.
 echo "Installing some essential tools..."

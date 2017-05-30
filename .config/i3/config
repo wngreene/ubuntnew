@@ -10,6 +10,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
+set $alt Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -200,6 +201,10 @@ bar {
     }
 }
 
+# Regaular Alt-TAB.
+bindsym $alt+Tab workspace next
+bindsym $alt+Shift+Tab workspace prev
+
 # Audio controls.
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5% #decrease sound volume
@@ -216,3 +221,8 @@ exec_always feh --bg-scale $wallpaper
 # Lock screen.
 bindsym $mod+Return exec i3lock -d -c 000000
 exec --no-startup-id xautolock -time 15 -locker 'i3lock -d -c 000000'
+
+# Screenshot tool.
+bindsym --release Print exec xfce4-screenshooter -f
+bindsym --release $mod+Print exec xfce4-screenshooter -w
+bindsym --release $mod+Shift+Print exec xfce4-screenshooter -r
