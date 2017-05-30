@@ -26,8 +26,8 @@ cp misc/zshrc ${HOME}/.zshrc
 # To switch default shell to zsh, execute:
 # chsh -s $(which zsh)
 
-sudo apt-get install -y terminator
-cp -r config/terminator ${HOME}/.config/terminator
+# sudo apt-get install -y terminator
+# cp -r config/terminator ${HOME}/.config/terminator
 
 # Installing some essential tools.
 echo "Installing some essential tools..."
@@ -123,7 +123,7 @@ sudo apt-get install -y libboost-all-dev
 ./packages/emacs.sh
 ./packages/dropbox.sh
 ./packages/skype.sh
-./packages/quicktile.sh
+# ./packages/quicktile.sh
 
 # TODO:
 # Sync chromium and firefox.
