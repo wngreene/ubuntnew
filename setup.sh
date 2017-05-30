@@ -29,6 +29,10 @@ cp misc/zshrc ${HOME}/.zshrc
 # sudo apt-get install -y terminator
 # cp -r config/terminator ${HOME}/.config/terminator
 
+# After installing, set theme in xfce4-terminal.
+mkdir -p ${HOME}/.local/share/xfce4/terminal/colorschemes
+cp misc/monokai-dark.theme ${HOME}/.local/share/xfce4/terminal/colorschemes/
+
 # Installing some essential tools.
 echo "Installing some essential tools..."
 # sudo apt-get install -y deja-dup
