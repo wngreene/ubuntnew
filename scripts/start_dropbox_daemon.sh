@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Start the dropbox daemon.
 #/home/$USER/.dropbox-dist/dropboxd
