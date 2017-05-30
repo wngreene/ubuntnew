@@ -14,7 +14,7 @@ source ${HOME}/.local/env.sh
 mkdir -p ${HOME}/.local/opt
 
 # Setup i3wm.
-sudo apt-get install -y i3 feh arandr
+sudo apt-get install -y i3 feh arandr lxappearance
 mkdir -p ${HOME}/.i3
 cp misc/i3config ${HOME}/.config/i3/config
 
