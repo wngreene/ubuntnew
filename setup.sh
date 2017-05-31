@@ -29,9 +29,11 @@ cp .zshrc ${HOME}/.zshrc
 # sudo apt-get install -y terminator
 # cp -r config/terminator ${HOME}/.config/terminator
 
-# After installing, set theme in xfce4-terminal.
+# After installing, set theme and font in xfce4-terminal.
+sudo apt-get install -y xfonts-terminus
 mkdir -p ${HOME}/.local/share/xfce4/terminal/colorschemes
 cp .config/monokai-dark.theme ${HOME}/.local/share/xfce4/terminal/colorschemes/
+cp .config/xfce4/terminal/terminalrc ${HOME}/.config/xfce4/terminal/terminalrc
 
 # Installing some essential tools.
 echo "Installing some essential tools..."
