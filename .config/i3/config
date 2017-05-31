@@ -228,4 +228,4 @@ bindsym --release $mod+Print exec xfce4-screenshooter -w
 bindsym --release $mod+Shift+Print exec xfce4-screenshooter -r
 
 # Emacs daemon.
-exec /usr/bin/emacs --daemon
+# exec /usr/bin/emacs --daemon

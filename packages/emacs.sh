@@ -30,4 +30,4 @@ git clone --recursive https://github.com/wngreene/emacs.d.git .emacs.d
 cd ${CW}
 
 # Copy daemon kill script.
-cp scripts/kill_emacs_daemon.sh ${HOME}/.local/bin/
+# cp scripts/kill_emacs_daemon.sh ${HOME}/.local/bin/
