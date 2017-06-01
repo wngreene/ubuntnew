@@ -131,6 +131,7 @@ sudo apt-get install -y libboost-all-dev
 ./packages/skype.sh
 # ./packages/quicktile.sh
 ./package/arc_theme.sh
+./package/simplescreenrecorder.sh
 
 # TODO:
 # Sync chromium and firefox.
