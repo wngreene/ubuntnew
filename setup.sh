@@ -17,6 +17,7 @@ mkdir -p ${HOME}/.local/opt
 sudo apt-get install -y i3 i3blocks feh xautolock lxappearance
 cp -r .config/i3/config ${HOME}/.config/i3/config
 cp scripts/i3blocksmemory.sh ${HOME}/.local/bin/
+cp scripts/i3_new_workspace.sh ${HOME}/.local/bin/
 
 # Shell stuff.
 sudo apt-get install -y zsh
