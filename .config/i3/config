@@ -229,3 +229,7 @@ bindsym --release $mod+Shift+Print exec xfce4-screenshooter -r
 
 # Emacs daemon.
 # exec /usr/bin/emacs --daemon
+
+# Move workspace to different output.
+bindsym $mod+u move workspace to output $screen0
+bindsym $mod+o move workspace to output $screen1
