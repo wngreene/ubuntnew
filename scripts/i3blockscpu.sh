@@ -50,6 +50,8 @@ if ($cpu_usage >= $t_crit) {
     exit 33;
 } elsif ($cpu_usage >= $t_warn) {
     print "#FFFC00\n";
+} else {
+    print "#00FF00\n";
 }
 
 exit 0;
