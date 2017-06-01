@@ -101,13 +101,12 @@ set $screen1 DVI-D-0
 set $ws1 "1:Terminal"
 set $ws2 "2:Firefox"
 set $ws3 "3:Thunar"
-set $ws4 "4:Misc"
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
 bindsym $mod+3 workspace $ws3
-bindsym $mod+4 workspace $ws4
+bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
@@ -119,7 +118,7 @@ bindsym $mod+0 workspace 10
 bindsym $mod+Shift+1 move container to workspace $ws1
 bindsym $mod+Shift+2 move container to workspace $ws2
 bindsym $mod+Shift+3 move container to workspace $ws3
-bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+4 move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
@@ -136,7 +135,6 @@ assign [class="Thunar"] $ws3
 workspace $ws1 output $screen0
 workspace $ws2 output $screen1
 workspace $ws3 output $screen0
-workspace $ws4 output $screen0
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
