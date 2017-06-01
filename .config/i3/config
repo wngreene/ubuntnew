@@ -31,7 +31,7 @@ font pango:Deja Vu Sans Mono Book 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+t exec xfce4-terminal
+bindsym $mod+Return exec xfce4-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -98,14 +98,13 @@ set $screen0 DVI-I-1
 set $screen1 DVI-D-0
 
 # Workspace variables.
-set $ws1 "1:Terminal"
-set $ws2 "2:Firefox"
-set $ws3 "3:Thunar"
+set $termws "Terminal"
+set $firefoxws "Firefox"
 
 # switch to workspace
-bindsym $mod+1 workspace $ws1
-bindsym $mod+2 workspace $ws2
-bindsym $mod+3 workspace $ws3
+bindsym $mod+1 workspace $termws
+bindsym $mod+2 workspace $firefoxws
+bindsym $mod+3 workspace 3
 bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
@@ -115,9 +114,9 @@ bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace $ws1
-bindsym $mod+Shift+2 move container to workspace $ws2
-bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+1 move container to workspace $termws
+bindsym $mod+Shift+2 move container to workspace $firefoxws
+bindsym $mod+Shift+3 move container to workspace 3
 bindsym $mod+Shift+4 move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
@@ -126,15 +125,27 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
+# Regaular Alt-TAB.
+bindsym $alt+Tab workspace next
+bindsym $alt+Shift+Tab workspace prev
+
+# Move workspace to different output.
+bindsym $mod+y move workspace to output $screen0
+bindsym $mod+p move workspace to output $screen1
+
+# Special keys for terminal and firefox workspaces.
+bindsym $mod+u workspace $termws
+bindsym $mod+o workspace $firefoxws
+bindsym $mod+Shift+u move container to workspace $termws
+bindsym $mod+Shift+o move container to workspace $firefoxws
+
 # Assign applications to workspaces.
-assign [class="Xfce4-terminal"] $ws1
-assign [class="Firefox"] $ws2
-assign [class="Thunar"] $ws3
+assign [class="Xfce4-terminal"] $termws
+assign [class="Firefox"] $firefoxws
 
 # Assign workspaces to screens.
-workspace $ws1 output $screen0
-workspace $ws2 output $screen1
-workspace $ws3 output $screen0
+workspace $termws output $screen0
+workspace $firefoxws output $screen1
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -199,10 +210,6 @@ bar {
     }
 }
 
-# Regaular Alt-TAB.
-bindsym $alt+Tab workspace next
-bindsym $alt+Shift+Tab workspace prev
-
 # Audio controls.
 bindsym XF86AudioRaiseVolume exec --no-startup-id /home/wng/.local/bin/volume_up.sh
 bindsym XF86AudioLowerVolume exec --no-startup-id /home/wng/.local/bin/volume_down.sh
@@ -217,7 +224,7 @@ set $wallpaper /home/wng/Pictures/wallpaper.png
 exec_always feh --bg-scale $wallpaper
 
 # Lock screen.
-bindsym $mod+Return exec i3lock -d -c 000000
+bindsym $mod+Shift+x exec i3lock -d -c 000000
 exec --no-startup-id xautolock -time 15 -locker 'i3lock -d -c 000000'
 
 # Screenshot tool.
@@ -227,7 +234,3 @@ bindsym --release $mod+Shift+Print exec xfce4-screenshooter -r
 
 # Emacs daemon.
 # exec /usr/bin/emacs --daemon
-
-# Move workspace to different output.
-bindsym $mod+u move workspace to output $screen0
-bindsym $mod+o move workspace to output $screen1
