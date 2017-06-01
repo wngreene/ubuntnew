@@ -133,6 +133,9 @@ bindsym $alt+Shift+Tab workspace prev
 bindsym $mod+y move workspace to output $screen0
 bindsym $mod+p move workspace to output $screen1
 
+# Create new workspace.
+bindsym $mod+n exec --no-startup-id ~/.local/bin/i3_new_workspace.sh
+
 # Special keys for terminal and firefox workspaces.
 bindsym $mod+u workspace $termws
 bindsym $mod+o workspace $firefoxws
