@@ -19,6 +19,11 @@ cp -r .config/i3/config ${HOME}/.config/i3/config
 cp scripts/i3blocksmemory.sh ${HOME}/.local/bin/
 cp scripts/i3_new_workspace.sh ${HOME}/.local/bin/
 
+# Setup awesome fonts.
+mkdir -p ${HOME}/.fonts
+wget https://github.com/FortAwesome/Font-Awesome/raw/master/fonts/fontawesome-webfont.ttf -P${HOME}/.fonts
+fc-cache -fv
+
 # Shell stuff.
 sudo apt-get install -y zsh
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
