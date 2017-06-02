@@ -241,5 +241,5 @@ bindsym --release $mod+Shift+Print exec xfce4-screenshooter -r
 # exec /usr/bin/emacs --daemon
 
 # Capslock and numlock bindings.
-bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
-bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
+# bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
+# bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
