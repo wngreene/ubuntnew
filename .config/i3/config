@@ -221,8 +221,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id /home/wng/.local/bin/volume_do
 bindsym XF86AudioMute exec --no-startup-id /home/wng/.local/bin/volume_mute.sh
 
 # Dropbox.
-exec_always --no-startup-id /home/wng/.local/bin/start_dropbox_daemon.sh
-exec_always --no-startup-id /home/wng/.local/bin/start_dropbox_mit_daemon.sh
+exec --no-startup-id /home/wng/.local/bin/start_dropbox_daemon.sh
+exec --no-startup-id /home/wng/.local/bin/start_dropbox_mit_daemon.sh
 
 # Wallpaper.
 set $wallpaper /home/wng/Pictures/wallpaper.png
