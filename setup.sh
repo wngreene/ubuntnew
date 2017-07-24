@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Setup a new Ubuntu machine. Needs to be run from the checkout directory.
 

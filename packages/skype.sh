@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Install skype
 # Taken from: https://askubuntu.com/questions/488053/how-to-install-skype-4-3
