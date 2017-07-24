@@ -1,29 +1,33 @@
 [global_config]
   title_transmit_bg_color = "#7fb3c2"
 [keybindings]
-  go_up = <Primary><Alt>i
-  go_down = <Primary><Alt>k
   close_term = <Primary><Shift>w
-  go_right = <Primary><Alt>l
-  go_left = <Primary><Alt>j
+  go_down = <Super>k
+  go_left = <Super>j
+  go_right = <Super>l
+  go_up = <Super>i
   hide_window = <Primary><Shift><Alt>h
-[profiles]
-  [[default]]
-    use_system_font = False
-    background_darkness = 0.8
-    background_type = transparent
-    background_image = None
-    cursor_color = "#8ae234"
-    icon_bell = False
-    font = Ubuntu Mono 10
-    scrollback_infinite = True
+  layout_launcher = None
+  new_terminator = None
+  next_tab = <Shift><Super>l
+  prev_tab = <Shift><Super>j
 [layouts]
   [[default]]
     [[[child1]]]
-      type = Terminal
       parent = window0
       profile = default
+      type = Terminal
     [[[window0]]]
-      type = Window
       parent = ""
+      type = Window
 [plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.8
+    background_image = None
+    background_type = transparent
+    cursor_color = "#8ae234"
+    font = Ubuntu Mono 9
+    icon_bell = False
+    scrollback_infinite = True
+    use_system_font = False
