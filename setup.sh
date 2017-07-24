@@ -21,8 +21,11 @@ cp .zshrc ${HOME}/.zshrc
 # To switch default shell to zsh, execute:
 # chsh -s $(which zsh)
 
+# Install terminator.
 sudo apt-get install -y terminator
-cp -r config/terminator ${HOME}/.config/terminator
+
+# Copy config files.
+cp -r .config/* ${HOME}/.config/
 
 # Installing some essential tools.
 echo "Installing some essential tools..."
