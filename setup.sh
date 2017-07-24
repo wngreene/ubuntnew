@@ -7,7 +7,7 @@ sudo apt-get update
 sudo apt-get upgrade
 
 # Add environment script to HOME/.local.
-sudo cp misc/env.sh ${HOME}/.local/env.sh
+sudo cp scripts/env.sh ${HOME}/.local/env.sh
 source ${HOME}/.local/env.sh
 
 # Create a local opt directory.
