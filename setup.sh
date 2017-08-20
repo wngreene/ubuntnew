@@ -18,7 +18,7 @@ sudo cp scripts/backup.sh ~/.local/bin/
 sudo cp scripts/keepassx_sync.sh ~/.local/bin/
 
 # Copy backup script to cron.daily.
-sudo cp scripts/backup.sh /etc/cron.daily/
+sudo ln -s ~/.local/bin/backup.sh /etc/cron.daily/backup.sh
 
 # Shell stuff.
 sudo apt-get install -y zsh
