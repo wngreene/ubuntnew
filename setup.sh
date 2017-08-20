@@ -13,6 +13,9 @@ source ${HOME}/.local/env.sh
 # Create a local opt directory.
 mkdir -p ${HOME}/.local/opt
 
+# Copy backup script to cron.daily.
+sudo cp scripts/backup.sh /etc/cron.daily/
+
 # Shell stuff.
 sudo apt-get install -y zsh
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
