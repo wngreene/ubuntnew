@@ -80,10 +80,10 @@ sudo pip install visvis
 sudo pip install pylint cpplint
 # mayavi?
 
-# DockBarX.
-sudo add-apt-repository ppa:dockbar-main/ppa
-sudo apt-get update
-sudo apt-get install -y xfce4-dockbarx-plugin
+# # DockBarX.
+# sudo add-apt-repository ppa:dockbar-main/ppa
+# sudo apt-get update
+# sudo apt-get install -y xfce4-dockbarx-plugin
 
 # Load monitor.
 sudo add-apt-repository ppa:indicator-multiload/stable-daily
