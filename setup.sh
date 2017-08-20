@@ -13,6 +13,10 @@ source ${HOME}/.local/env.sh
 # Create a local opt directory.
 mkdir -p ${HOME}/.local/opt
 
+# Copy some scripts to local bin.
+sudo cp scripts/backup.sh ~/.local/bin/
+sudo cp scripts/keepassx_sync.sh ~/.local/bin/
+
 # Copy backup script to cron.daily.
 sudo cp scripts/backup.sh /etc/cron.daily/
 
