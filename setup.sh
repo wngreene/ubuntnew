@@ -119,7 +119,7 @@ sudo apt-get install -y libboost-all-dev
 # Install other packages.
 ./packages/emacs.sh
 ./packages/dropbox.sh
-./packages/skype.sh
+# ./packages/skype.sh
 ./packages/quicktile.sh
 
 # TODO:
