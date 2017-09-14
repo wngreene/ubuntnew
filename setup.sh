@@ -20,14 +20,6 @@ sudo cp scripts/keepassx_sync.sh ~/.local/bin/
 # Copy backup script to cron.daily.
 sudo ln -s ~/.local/bin/backup.sh /etc/cron.daily/backup
 
-# Shell stuff.
-sudo apt-get install -y zsh
-sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-cp .zshrc ${HOME}/.zshrc
-
-# To switch default shell to zsh, execute:
-# chsh -s $(which zsh)
-
 # Install terminator.
 sudo apt-get install -y terminator
 
@@ -138,3 +130,11 @@ sudo apt-get install -y libboost-all-dev
 
 # Install CUDA.
 # Install OpenCL.
+
+# Shell stuff.
+sudo apt-get install -y zsh
+sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+cp .zshrc ${HOME}/.zshrc
+
+# To switch default shell to zsh, execute:
+# chsh -s $(which zsh)
