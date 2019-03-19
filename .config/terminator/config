@@ -1,6 +1,7 @@
 [global_config]
   title_transmit_bg_color = "#7fb3c2"
 [keybindings]
+  broadcast_group = None
   close_term = <Super>BackSpace
   go_down = <Super>k
   go_left = <Super>j
