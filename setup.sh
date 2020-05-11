@@ -46,7 +46,7 @@ sudo apt-get install -y build-essential
 sudo apt-get install -y openjdk-7-jdk 
 sudo apt-get install -y linux-headers-generic
 sudo apt-get install -y gnome-system-monitor
-sudo apt-get install -y libreoffice
+# sudo apt-get install -y libreoffice
 sudo apt-get install -y vlc xubuntu-restricted-extras libavcodec-extra
 # sudo apt-get install -y okular
 # sudo apt-get install -y banshee
@@ -75,7 +75,7 @@ sudo apt-get install -y python-pip
 sudo pip install virtualenv
 sudo pip install virtualenvwrapper
 sudo apt-get install -y python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
-sudo pip install visvis
+# sudo pip install visvis
 sudo pip install pylint cpplint
 # mayavi?
 
@@ -92,13 +92,13 @@ sudo apt-get install indicator-multiload
 # Install nvidia drivers.
 sudo add-apt-repository -y ppa:xorg-edgers/ppa
 sudo apt-get update
-sudo apt-get install -y nvidia-375 nvidia-settings
+# sudo apt-get install -y nvidia-375 nvidia-settings
 
 # Install OpenGL.
-sudo apt-get install -y xorg-dev libglw1-mesa-dev libgl1-mesa-dev libglu1-mesa-dev mesa-common-dev mesa-utils freeglut3-dev libglew-dev
+# sudo apt-get install -y xorg-dev libglw1-mesa-dev libgl1-mesa-dev libglu1-mesa-dev mesa-common-dev mesa-utils freeglut3-dev libglew-dev
 
 # Install boost.
-sudo apt-get install -y libboost-all-dev 
+# sudo apt-get install -y libboost-all-dev 
 
 # Install grive.
 # sudo add-apt-repository ppa:thefanclub/grive-tools
