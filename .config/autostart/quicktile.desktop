@@ -2,9 +2,9 @@
 Encoding=UTF-8
 Version=0.9.4
 Type=Application
-Name=quicktily.py
+Name=quicktile
 Comment=
-Exec=/home/wng/.local/bin/quicktile.py -d
+Exec=quicktile --daemonize
 OnlyShowIn=XFCE;
 StartupNotify=false
 Terminal=false
