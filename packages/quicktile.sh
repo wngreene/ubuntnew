@@ -4,19 +4,9 @@
 CW=${PWD}
 
 # Install some dependencies.
-sudo apt-get install -y python python-gtk2 python-xlib python-dbus python-wnck
+sudo apt-get install python3 python3-pip python3-setuptools python3-gi python3-xlib python3-dbus gir1.2-glib-2.0 gir1.2-gtk-3.0 gir1.2-wnck-3.0
+sudo pip3 install https://github.com/ssokolow/quicktile/archive/master.zip
 
 cp ./.config/quicktile.cfg ${HOME}/.config/
-
-mkdir -p ${HOME}/.local/opt
-cd ${HOME}/.local/opt
-
-mkdir -p ${HOME}/.local/lib/python2.7/site-packages
-mkdir -p ${HOME}/.local/lib/python2.7/dist-packages
-
-git clone git://github.com/ssokolow/quicktile
-cd quicktile
-
-sudo ./setup.py install --prefix=${HOME}/.local
 
 cd ${CW}
