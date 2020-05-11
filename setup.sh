@@ -49,8 +49,6 @@ sudo apt-get install -y linux-headers-generic
 sudo apt-get install -y gnome-system-monitor
 # sudo apt-get install -y libreoffice
 sudo apt-get install -y vlc xubuntu-restricted-extras libavcodec-extra
-# sudo apt-get install -y okular
-# sudo apt-get install -y banshee
 sudo apt-get install -y transmision
 sudo apt-get install -y cmake cmake-curses-gui
 sudo apt-get install -y libhdf5-dev hdf5-tools hdf5-helpers h5utils
@@ -76,14 +74,7 @@ sudo apt-get install -y python-pip
 sudo pip install virtualenv
 sudo pip install virtualenvwrapper
 sudo apt-get install -y python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
-# sudo pip install visvis
 sudo pip install pylint cpplint
-# mayavi?
-
-# # DockBarX.
-# sudo add-apt-repository ppa:dockbar-main/ppa
-# sudo apt-get update
-# sudo apt-get install -y xfce4-dockbarx-plugin
 
 # Load monitor.
 sudo add-apt-repository ppa:indicator-multiload/stable-daily
@@ -93,29 +84,10 @@ sudo apt-get install indicator-multiload
 # Install nvidia drivers.
 sudo add-apt-repository -y ppa:xorg-edgers/ppa
 sudo apt-get update
-# sudo apt-get install -y nvidia-375 nvidia-settings
+# sudo apt-get install -y nvidia-driver-440
 
 # Install OpenGL.
 # sudo apt-get install -y xorg-dev libglw1-mesa-dev libgl1-mesa-dev libglu1-mesa-dev mesa-common-dev mesa-utils freeglut3-dev libglew-dev
-
-# Install boost.
-# sudo apt-get install -y libboost-all-dev 
-
-# Install grive.
-# sudo add-apt-repository ppa:thefanclub/grive-tools
-# sudo apt-get update
-# sudo apt-get install -y grive-tools
-
-# Install PyOpenGL.
-# sudo pip install PyOpenGL PyOpenGL_accelerate
-
-# Install some research stuff.
-# sudo apt-get install -y libeigen3-dev
-# sudo apt-get install -y libopencv-dev
-
-# sudo add-apt-repository ppa:v-launchpad-jochen-sprickerhof-de/pcl
-# sudo apt-get update
-# sudo apt-get install -y libpcl-all-dev
 
 # Install other packages.
 ./packages/emacs.sh
