@@ -11,6 +11,7 @@ sudo cp scripts/env.sh ${HOME}/.local/env.sh
 source ${HOME}/.local/env.sh
 
 # Create a local opt directory.
+mkdir -p ${HOME}/.local/bin
 mkdir -p ${HOME}/.local/opt
 
 # Copy some scripts to local bin.
