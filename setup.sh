@@ -77,9 +77,7 @@ sudo apt-get install -y python-numpy python-scipy python-matplotlib ipython ipyt
 sudo pip install pylint cpplint
 
 # Load monitor.
-sudo add-apt-repository ppa:indicator-multiload/stable-daily
-sudo apt-get update
-sudo apt-get install indicator-multiload
+sudo apt-get install -y indicator-multiload
 
 # Install nvidia drivers.
 sudo add-apt-repository -y ppa:xorg-edgers/ppa
