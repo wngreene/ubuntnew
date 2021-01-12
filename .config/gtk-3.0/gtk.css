@@ -5,3 +5,10 @@
 .terminator-terminal-window notebook header, .terminator-terminal-window stack {
     border: none;
 }
+
+.terminator-terminal-window notebook tab button {
+  min-height: 0;
+  min-width: 0;
+  padding: 0px;
+  margin: 0px;
+}
