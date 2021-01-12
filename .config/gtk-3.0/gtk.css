@@ -1,0 +1,7 @@
+.terminator-terminal-window notebook tab {
+    border: none;
+}
+
+.terminator-terminal-window notebook header, .terminator-terminal-window stack {
+    border: none;
+}
