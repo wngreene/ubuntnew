@@ -1,14 +1,18 @@
 .terminator-terminal-window notebook tab {
-    border: none;
+  background-color: darkgrey;
+  padding: 0;
+  border: none;
 }
 
 .terminator-terminal-window notebook header, .terminator-terminal-window stack {
     border: none;
 }
 
+.terminator-terminal-window notebook tab:checked {
+  background-image: none;
+  background-color: #FFFFFF;
+}
+
 .terminator-terminal-window notebook tab button {
-  min-height: 0;
-  min-width: 0;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
 }
