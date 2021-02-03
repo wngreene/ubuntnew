@@ -9,6 +9,6 @@ fi
 export PATH=${WS}/bin:${PATH}
 export LD_LIBRARY_PATH=${WS}/lib:${LD_LIBRARY_PATH}
 export PKG_CONFIG_PATH=${WS}/lib/pkgconfig:${PKG_CONFIG_PATH}
-export PYTHONPATH=${WS}/lib/python2.7/dist-packages:${WS}/lib/python2.7/site-packages:${PYTHONPATH}
+# export PYTHONPATH=${WS}/lib/python2.7/dist-packages:${WS}/lib/python2.7/site-packages:${PYTHONPATH}
 export CLASSPATH=${WS}/share/java:${CLASSPATH}
 export CMAKE_PREFIX_PATH=${WS}:${CMAKE_PREFIX_PATH}
