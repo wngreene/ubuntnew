@@ -14,13 +14,6 @@ source ${HOME}/.local/env.sh
 mkdir -p ${HOME}/.local/bin
 mkdir -p ${HOME}/.local/opt
 
-# Copy some scripts to local bin.
-#sudo cp scripts/backup.sh ~/.local/bin/
-#sudo cp scripts/keepassx_sync.sh ~/.local/bin/
-
-# Copy backup script to cron.daily.
-#sudo ln -s ~/.local/bin/backup.sh /etc/cron.daily/backup
-
 # Install terminator.
 sudo apt-get install -y terminator
 
@@ -59,8 +52,8 @@ sudo apt-get install -y openssh-client openssh-server
 sudo apt-get install -y geeqie
 
 # Install web stuff.
-echo "Installing web stuff..."
-sudo apt-get install -y chromium-browser
+# echo "Installing web stuff..."
+# sudo apt-get install -y chromium-browser
 #sudo apt-get install -y pepperflashplugin-nonfree # Flash for chromium.
 #sudo apt-get install -y flashplugin-installer # Flash for firefox.
 #sudo apt-get install -y icedtea-plugin # Java plugin.
@@ -69,39 +62,11 @@ sudo apt-get install -y chromium-browser
 #echo "Installing LaTeX stuff..."
 #sudo apt-get install -y texlive
 
-# Python stuff.
-echo "Installing Python stuff..."
-sudo apt-get install -y python-pip
-sudo pip install virtualenv
-sudo pip install virtualenvwrapper
-#sudo apt-get install -y python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
-#sudo pip install pylint cpplint
-
 # Load monitor.
-#sudo apt-get install -y indicator-multiload
-
-# Install nvidia drivers.
-#sudo add-apt-repository -y ppa:xorg-edgers/ppa
-#sudo apt-get update
-# sudo apt-get install -y nvidia-driver-440
-
-# Install OpenGL.
-# sudo apt-get install -y xorg-dev libglw1-mesa-dev libgl1-mesa-dev libglu1-mesa-dev mesa-common-dev mesa-utils freeglut3-dev libglew-dev
+sudo apt-get install -y indicator-multiload
 
 # Install other packages.
-./packages/emacs.sh
-#./packages/dropbox.sh
-# ./packages/skype.sh
 ./packages/quicktile.sh
-
-# TODO:
-# Sync chromium and firefox.
-# Import certificates.
-
-# Set static IP and namespaces (/etc/hosts).
-
-# Install CUDA.
-# Install OpenCL.
 
 # Shell stuff.
 sudo apt-get install -y zsh
