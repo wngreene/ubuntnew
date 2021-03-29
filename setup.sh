@@ -28,7 +28,7 @@ sudo apt-get install -y gnome-disk-utility
 sudo apt-get install -y gparted
 sudo apt-get install -y usb-creator-gtk
 sudo apt-get install -y git gitk subversion
-sudo apt-get install -y keepassx
+sudo apt-get install -y keepassxc
 #sudo apt-get install -y rsync grsync #unison unison-gtk
 sudo apt-get install -y trash-cli
 sudo apt-get install -y git
