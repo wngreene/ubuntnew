@@ -18,8 +18,7 @@ mkdir -p ${HOME}/.local/opt
 sudo apt-get install -y terminator
 
 # Copy config files.
-#cp -r .config/* ${HOME}/.config/
-cp -r .config/quicktile.cfg ${HOME}/.config/
+cp -r .config/* ${HOME}/.config/
 
 # Installing some essential tools.
 echo "Installing some essential tools..."
